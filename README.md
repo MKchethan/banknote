@@ -17,4 +17,5 @@ dvc init
 
 dvc add data_given/BankNote_Authentication.csv
 
-
+git add.
+git commit -m "first commit"

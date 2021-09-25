@@ -17,15 +17,12 @@ split_data:
 estimators:
   RandomForestClassifier:
     params:
-      maxDepth:8
-      num_trees:100
-      FeatureSubsetStrategy:"auto"
-      Seed:20
-
+      max_depth: 8
+      n_estimators: 100
 model_dir: saved_models
 
-#reports:
-#  params: report/params.json
-#  scores: report/scores.json
+reports:
+  params: report/params.json
+  scores: report/scores.json
 
-#webapp_model_dir: prediction_service/model/model.joblib
+webapp_model_dir: prediction_service/model/model.joblib

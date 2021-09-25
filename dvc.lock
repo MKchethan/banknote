@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=params.yaml
+    deps:
+    - path: data_given/BankNote_Authentication.csv
+      md5: 588378a19f074e7299d974545ded1999
+      size: 46442
+    - path: src/get_data.py
+      md5: 6c5f7dd4aae5ea34bf052fff3e8eb1da
+      size: 721
+    - path: src/load_data.py
+      md5: acedc21ebd8a9f5eeebbe6f8b0a9bd4f
+      size: 700
+    outs:
+    - path: data/raw/BankNote_Authentication.csv
+      md5: d646019d27c00893f7c640cfa03198cc
+      size: 46446

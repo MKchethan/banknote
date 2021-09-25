@@ -32,3 +32,12 @@ git add . && git commit -m "params added"
 
 
 touch src/get_data.py
+python src/get_data.py
+
+
+touch src/load_data.py
+python src/load_data.py
+
+dvc repro 
+
+git add . && git commit -m "stage 1 completed"

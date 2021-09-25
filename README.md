@@ -47,3 +47,9 @@ dvc repro
 
 git add . && git commit -m "stage 2 completed"
 git push origin main
+
+
+git add . && git commit -m "tracker is added"
+git push origin main
+
+dvc metrics diff

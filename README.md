@@ -17,5 +17,12 @@ dvc init
 
 dvc add data_given/BankNote_Authentication.csv
 
-git add.
+git add .
 git commit -m "first commit"
+
+
+git add . && git commit -m "update README.md"
+
+git remote add origin https://github.com/MKchethan/banknote.git
+git branch -M main
+git push origin main

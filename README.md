@@ -41,3 +41,9 @@ python src/load_data.py
 dvc repro 
 
 git add . && git commit -m "stage 1 completed"
+git push origin main
+
+dvc repro
+
+git add . && git commit -m "stage 2 completed"
+git push origin main

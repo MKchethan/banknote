@@ -26,3 +26,9 @@ git add . && git commit -m "update README.md"
 git remote add origin https://github.com/MKchethan/banknote.git
 git branch -M main
 git push origin main
+
+
+git add . && git commit -m "params added"
+
+
+touch src/get_data.py

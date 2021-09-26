@@ -57,3 +57,14 @@ dvc metrics diff
 dvc metrics show
 
 pip install -r requirements.txt
+
+git add . && git commit -m "pytest and tox"
+git push origin main
+
+tox
+
+touch setup.py
+
+
+pip install -e .
+

@@ -53,3 +53,7 @@ git add . && git commit -m "tracker is added"
 git push origin main
 
 dvc metrics diff
+
+dvc metrics show
+
+pip install -r requirements.txt

@@ -61,10 +61,52 @@ pip install -r requirements.txt
 git add . && git commit -m "pytest and tox"
 git push origin main
 
+
+toxcommand-
+```bash
 tox
+```
+rebuliding tox-
+```bash
+tox -r
+```
+
+pytest command -
+```bash
+pytest -v
+```
+
+
 
 touch setup.py
 
-
+setup commands
+```bash
 pip install -e .
+```
+
+
+build our own package commands-
+```bash
+python setup.py sdist bdist_wheel
+```
+
+
+git add . && git commit -m "added setup"
+git push origin main
+
+Install jupiter-lab
+```bash
+pip install jupyterlab
+```
+
+mkdir prediction_service\model
+mkdir webapp
+touch app.py
+touch prediction_service/__init__.py
+touch prediction_service/prediction.py
+mkdir webapp\static\css
+mkdir webapp\static\sctipt
+touch webapp/static/css/main.css
+
 

@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import os
 import yaml
 import joblib
-import numpy as n
+import numpy as np
 
 params_path = "params.yaml"
 webapp_root = "webapp"
@@ -26,6 +26,7 @@ def predict(data):
     prediction = model.predict(data)
     print(prediction)
     return prediction[0]
+
 
 def api_response(request):
     try:
@@ -62,6 +63,5 @@ def index():
         return render_template("index.html")
 
 
-
-if __name__=="__main__":
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
